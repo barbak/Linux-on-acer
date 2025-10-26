@@ -11,7 +11,7 @@ Il faut ajouter acpi=off dans les options de grub
 	
 ## Ajouter ou supprimer acpi=off au démarrage
 
-	Sur le menu de grub , taper e pour edit avant que le démarrage ne commence
+Sur le menu de grub , taper e pour edit avant que le démarrage ne commence
   	Ajouter acpi=off aprés /casper/vmlinux ( attention au clavier qwerty a=q )
 	Appuyer sur F10
 	
@@ -24,6 +24,7 @@ Pour ne pas avoir à ajouter acpi=off en mode edit à chaque démarrage
 
 	vi /etc/default/grub
 		ajouter acpi=off à la variable GRUB_CMDLINE_LINUX_DEFAULT  
+		commenter la ligne ajouter # GRUB_CMDLINE_LINUX="acpi=off"
 	escape :x!                        sauvegarder et quitter le fichier dans vi
 
 	update-grub                       création du fichier /boot/grub/grub.cfg
